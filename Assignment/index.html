@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+  <title>Canvas</title>
+    <style>
+       canvas{
+            border: 1px solid red;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+  <canvas id="newCanvas" width="220" height="250"></canvas>
+      <script>
+         var canvas = document.getElementById('newCanvas');
+         var ctx = canvas.getContext('2d');
+         ctx.fillStyle = "red";
+         ctx.beginPath();
+         ctx.moveTo(108, 0.0);
+         ctx.lineTo(141, 70);
+         ctx.lineTo(218, 78.3);
+         ctx.lineTo(162, 131);
+         ctx.lineTo(175, 205);
+         ctx.lineTo(108, 170);
+         ctx.lineTo(41.2, 205);
+         ctx.lineTo(55, 131);
+         ctx.lineTo(1, 78);
+         ctx.lineTo(75, 68);
+         ctx.lineTo(108, 0);
+         ctx.closePath();
+         ctx.fill();    
+      </script>
+      <form> 
+        Name: <input type="text" placeholder="Enter Your name" Required>
+        <br>
+        <br>
+        Date of Birth: <input type = "date"> 
+        <button type="submit" name="btn">Submit</button>
+        <p id="username" > Hi, user! </p>
+        </form>  
+      <title>Happy Birthday</title>
+  <div class="card">
+    <img src="./images/happy-birthday1.jpg" alt="birthday" class="birthday">
+    <div class="text">
+      <h1>Happy Birthday!</h1>
+      <h4 style="color:rgb(225, 0, 255)">I hope you have a wonderful birthday</h4>
+       <p style="color: blue;">- Vineetha Gogulapati </p>
+    </div>
+    <div class="space"></div>
+  </div>
+</body>
+</html>
